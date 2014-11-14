@@ -14,10 +14,10 @@ RUN apt-get update && apt-get install -y \
   zlib1g-dev
 
 WORKDIR /tmp
-RUN wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.4.tar.gz && \
-  tar -xzvf ruby-2.1.4.tar.gz
+RUN wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz && \
+  tar -xzvf ruby-2.1.5.tar.gz
 
-WORKDIR /tmp/ruby-2.1.4
+WORKDIR /tmp/ruby-2.1.5
 RUN ./configure && make && make install
 
 RUN gem install rubygems-update --no-ri --no-rdoc && \
