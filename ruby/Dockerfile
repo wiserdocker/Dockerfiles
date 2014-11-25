@@ -2,6 +2,7 @@ FROM ubuntu:14.10
 
 RUN apt-get update && apt-get install -y \
   build-essential \
+  git-core \
   libcurl4-openssl-dev \
   libffi-dev \
   libpq-dev \
